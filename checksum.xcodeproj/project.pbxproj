@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		DC472B3A1FE3420D00B74D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC472B391FE3420D00B74D9A /* AppDelegate.swift */; };
-		DC472B3C1FE3420D00B74D9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC472B3B1FE3420D00B74D9A /* ViewController.swift */; };
 		DC472B3E1FE3420D00B74D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC472B3D1FE3420D00B74D9A /* Assets.xcassets */; };
 		DC472B411FE3420D00B74D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC472B3F1FE3420D00B74D9A /* Main.storyboard */; };
+		DC472B4A1FE348E200B74D9A /* ChecksumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC472B491FE348E200B74D9A /* ChecksumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC472B361FE3420D00B74D9A /* checksum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checksum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC472B391FE3420D00B74D9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC472B3B1FE3420D00B74D9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC472B3D1FE3420D00B74D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC472B401FE3420D00B74D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC472B421FE3420D00B74D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC472B431FE3420D00B74D9A /* checksum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = checksum.entitlements; sourceTree = "<group>"; };
+		DC472B491FE348E200B74D9A /* ChecksumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecksumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				DC472B391FE3420D00B74D9A /* AppDelegate.swift */,
-				DC472B3B1FE3420D00B74D9A /* ViewController.swift */,
 				DC472B3D1FE3420D00B74D9A /* Assets.xcassets */,
+				DC472B491FE348E200B74D9A /* ChecksumViewController.swift */,
 				DC472B3F1FE3420D00B74D9A /* Main.storyboard */,
 				DC472B421FE3420D00B74D9A /* Info.plist */,
 				DC472B431FE3420D00B74D9A /* checksum.entitlements */,
@@ -134,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC472B3C1FE3420D00B74D9A /* ViewController.swift in Sources */,
+				DC472B4A1FE348E200B74D9A /* ChecksumViewController.swift in Sources */,
 				DC472B3A1FE3420D00B74D9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +264,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = checksum/checksum.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CUCB33MFQZ;
@@ -271,6 +272,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newnoetic.checksum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -280,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = checksum/checksum.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CUCB33MFQZ;
@@ -287,6 +290,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newnoetic.checksum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
